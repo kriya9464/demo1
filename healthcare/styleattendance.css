@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:radial-gradient(#EAF1F1,#4b7272);
+}
+
+
+
+header{
+    width: 100%;
+    
+    display:flex;
+    /* border: 2px solid gray; */
+    height: 9rem;
+    justify-content: space-between;
+    
+    background-color:  hsla(180, 34%, 62%, 0.327);
+    position:sticky;
+    
+}
+
+#left{
+    flex-shrink:1;
+    padding-left: 30px;
+    padding-top: 4px;
+}
+
+#left img{
+    width:100%;
+    border-radius: 50%;
+    height: 7.5rem;
+    
+}
+.center{
+    /* border:2px solid white; */
+    margin-left: 6rem;
+    align-content:center;
+}
+
+#upper{
+  /*  border:2px solid black; */
+    margin-bottom:10px;
+    padding:2px;
+    height:5rem;
+    position:relative;
+    width:100%;
+   /*  background-color: aqua; */
+}
+/* #lower{
+    display: flex;
+    flex-direction:column;
+    align-content:space-around;
+
+    height: 8rem;
+    width:60vw;
+    
+} */
+
+#menu{
+    margin:2px;
+    display:flex;
+    width:60vw;
+    justify-content: space-between;
+    align-items:flex-end;
+    font-size: 25px;
+}
+li{
+    list-style: none;
+    border:2px solid white;
+    border-radius:25px;
+    padding:7px 20px;
+    flex-shrink:1;
+    background-color:#EAF1F1;
+    ;
+    
+    
+}
+#size{
+    width:100px;
+    padding-left: 27px;
+}
+
+a{
+    text-decoration: none;
+    background-color:#EAF1F1;
+    color:rgb(55, 10, 10);
+    width:100px;
+}
+a:visited{
+    color:rgb(55, 10, 10);
+}
+a:hover{
+    opacity:0.5;
+}
+a:active{
+    opacity:0.7;
+}
+
+
+
+
+#right{
+   width:15vw;
+   height: 8.8rem;
+   margin-left: 2rem;
+   margin-right: 0px;
+   flex-shrink:1;
+}
+#register{
+    width: 65%;
+  font-size: 30px;
+  margin-top: 3rem;
+  margin-right: 0px;
+  padding-left: 2rem;
+}
+a{ 
+    text-decoration: none;
+    /* background-color: black; */
+   
+}
+
+.animate{
+    width:100%;
+    height:200px;
+   /*  border: 2px solid black; */
+    text-align: center;
+}
+
+.animate img{
+    height:100%;
+    border-radius:50%;
+}
+
+.animate img{
+    animation-name:slide;
+    animation-duration:5s;
+    transition-delay: 1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 10;
+}
+    
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform:translateX(600px) rotate(180deg);
+
+    }
+
+    66%{
+        transform:translateX(-600px) rotate(-180deg);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+#heading{
+    /* display:flex; */
+    background-image: url('https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Neha_Mathur/Achari_Paneer_Tikka_Recipe_Party_Food.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    ;
+    /* background: #7cbfbf; */
+}
+
+.title{
+    margin-top: 2rem;
+    width: 20%;
+   
+}
+/* #heading img{
+    width: 100%;
+    height:200px;
+} */
+
+h1{
+
+   /*  padding-top: 2rem; */
+   /*  width:60%; */
+    height: 22vh; 
+   color:#256767;
+   background-color: rgba(0, 0, 0, 0.203);
+   text-shadow: 2px 2px 5px black;
+    padding-top:4rem; 
+    /*  margin-left: 4rem; */
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#part1{
+    margin-top: 5rem;
+    display:flex;
+
+}
+
+.paragraph{
+     width:60%;
+     height:300px;
+     padding-left: 4rem;
+     padding-right: 4rem;
+}
+.pics{
+    width:40%;
+    /* height:100px; */
+}
+.pics img{
+    width:100%;
+    /* height:300px; */
+     border-radius:4rem; 
+}
+
+#part1 img{
+    width:60%;
+    border-radius:50%;
+   
+}
+
+
+#part2{
+    display:flex;
+    margin-top: 3rem;
+ }
+/*
+.mainleft2{
+    width:40%;
+    height: 300px;
+}
+
+.mainleft2 img{
+    width:100%;
+    height:300px; 
+}
+
+.mainright2{
+    width:40%;
+    height: 300px;
+}
+ */
+#part3{
+    display:flex;
+    margin-top: 3rem;
+}
+
+footer{
+     background-color: black;
+     color:whitesmoke;
+     margin-bottom: 0;
+}
+
+#part1:hover, #part2:hover, #part3:hover{
+    background-color:hsla(180, 2%, 24%, 0.205) ;
+    transition-property:background-color;
+    transition-duration:0;
+    transition-delay: 0;
+    /* transition-delay:2s; */
+}
+
+/* #part1:nth-child(2):hover{
+    transition: all 5s 0.5s;
+} */
+
+@media (prefers-color-scheme: dark){
+    body{background-color: black;}
+}
