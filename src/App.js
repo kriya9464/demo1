@@ -20,7 +20,7 @@ function App() {
       {/* <Textrev/> */}
       <Product/>
       <Elem/>
-      <Product2/>
+//       <Product2/>
    
      
     </div>
